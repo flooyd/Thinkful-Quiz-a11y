@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="An HTML/CSS/JavaScript Quiz">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Quiz App</title>
+</head>
+
+<body>
+  <header role="banner">
+    <img src="https://i.imgur.com/k6LZeh3.png" alt="Three logos. One for HTML, JavaScript, and CSS">
+    <h1>Quiz</h1>
+  </header>
+  <main role="main">
+    <p class="quizDescription">Test your knowledge of HTML, CSS and JavaScript with a fun bonus question at the end!</p>
+    <button class="begin-js">Begin!</button>
+    <form role="form" method="post" action="submitAnswer">
+      <section role="region" class="scoreContainer">
+        <div class="score">Score:
+          <span class="score-js">0/0</span>
+        </div>
+        <div class="remaining">
+          <span class="remaining-js">5</span> Questions Remaining</div>
+        <img class="emoji">
+      </section>
+      <fieldset name="Question">
+        <legend>#1</legend>
+        <p class="question">Which of the following is NOT a reserved word in JavaScript</p>
+        <img class="typeIcon" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
+        <ul class="answers">
+          <li>
+            <input type="radio" name="answer" value="0">
+            <span class="answer">var</span>
+          </li>
+          <li>
+            <input type="radio" name="answer" value="1">
+            <span class="answer">goto</span>
+          </li>
+          <li>
+            <input type="radio" name="answer" value="2">
+            <span class="answer">do</span>
+          </li>
+          <li>
+            <input type="radio" name="answer" value="3">
+            <span class="answer">continue</span>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">This is my final answer.</button>
+        <section class="feedback" role="region">
+          <p>That is
+            <span class="isCorrect-js"></span>
+          </p>
+          <p class="correctAnswer-js"></p>
+          <button class="next next-js">Next Question</button>
+        </section>
+    </form>
+    <section class="results" role="region">
+      <p>You got
+        <span class="results-js"></span> questions correct!</p>
+      <img class="results-emoji">
+      <p class="wrong-js"></p>
+      <ul class="links">
+
+      </ul>
+      <button class="again-js">Play again!</button>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>

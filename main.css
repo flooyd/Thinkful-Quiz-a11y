@@ -1,0 +1,155 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', Sans-Serif;
+}
+
+body {
+  background-color: whitesmoke;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+header {
+    width: 50%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+img {
+  width: inherit;
+  /*native image width, okay to scale down, but blurry if scaled up*/
+  max-width: 293px;
+}
+
+main {
+  font-size: 18px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quizDescription {
+  font-size: 20px;
+}
+
+form {
+  text-align: justify;
+  display: none;
+  position: relative;
+}
+
+fieldset {
+  border: 1px solid green;
+}
+
+.answers {
+  padding-left: 5px;
+}
+
+li {
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.answer {
+  padding-left: 12px
+}
+
+.remaining {
+  display: inline-block;
+  line-height: 50px;
+}
+
+.feedback{
+  display: none;
+}
+
+.next {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.scoreContainer {
+  position: relative;
+  border: 1px solid lightgrey;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  margin-bottom: 10px;
+  
+}
+.emoji {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  height: 100%;
+}
+
+.score {
+  position: absolute;
+  left: 10px;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.typeIcon {
+  height:75px;
+  float: right;
+  padding-top: 10px;
+}
+
+.question {
+  display: inline;
+}
+
+.results {
+  display: none;
+}
+
+.links {
+  padding: 0px;
+}
+
+li a {
+  text-align: left;
+}
+
+li img {
+  line-height: 60px;
+  height: 30px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+.emoji, .score, .remaining {
+  position: static;
+  display: block;
+  
+  margin: 0 auto;
+}
+
+.scoreContainer {
+  position: static;
+  width: 100%;
+}
+
+.emoji {
+  width: 25%;
+}
+
+main {
+  font-size: 14px;
+}
+
